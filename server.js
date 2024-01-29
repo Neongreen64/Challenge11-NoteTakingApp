@@ -7,7 +7,7 @@ const {v4:uuidv4} = require('uuid');
 const app = express();
 
 //delcare port
-const PORT = process.constrainedMemory.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 //middleware for json
 app.use(express.json());
